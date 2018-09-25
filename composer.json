@@ -23,7 +23,7 @@
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "davibennun/laravel-push-notification": "dev-laravel5",
         "brozot/laravel-fcm": "^1.0",
-        "barryvdh/laravel-debugbar": "3.1.*",
+        "barryvdh/laravel-debugbar": "3.2.*",
         "aws/aws-sdk-php": "~3.0",
         "predis/predis": "~1.0",
         "mremi/url-shortener": "^1.0",
