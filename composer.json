@@ -20,7 +20,7 @@
         "chumper/datatable": "dev-develop",
         "chumper/zipper": "1.0.x",
         "tymon/jwt-auth": "dev-develop",
-        "davejamesmiller/laravel-breadcrumbs": "^3.0",
+        "davejamesmiller/laravel-breadcrumbs": "^5.1",
         "davibennun/laravel-push-notification": "dev-laravel5",
         "brozot/laravel-fcm": "^1.0",
         "barryvdh/laravel-debugbar": "3.1.*",
