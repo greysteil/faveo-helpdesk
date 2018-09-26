@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c83afecf8a566439811bd8da82f233c",
+    "content-hash": "89ec0f1d025f08c50b254b90c95f4371",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -511,12 +511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davibennun/laravel-push-notification.git",
-                "reference": "6970bbe4f1e1744677208f895bc08032f4baf3be"
+                "reference": "7b129a18ecec7368a0de27ac0039d414aa596936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davibennun/laravel-push-notification/zipball/6970bbe4f1e1744677208f895bc08032f4baf3be",
-                "reference": "6970bbe4f1e1744677208f895bc08032f4baf3be",
+                "url": "https://api.github.com/repos/davibennun/laravel-push-notification/zipball/7b129a18ecec7368a0de27ac0039d414aa596936",
+                "reference": "7b129a18ecec7368a0de27ac0039d414aa596936",
                 "shasum": ""
             },
             "require": {
@@ -525,6 +525,16 @@
                 "sly/notification-pusher": "2.*"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Davibennun\\LaravelPushNotification\\LaravelPushNotificationServiceProvider"
+                    ],
+                    "aliases": {
+                        "PushNotification": "Davibennun\\LaravelPushNotification\\Facades\\PushNotification"
+                    }
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Davibennun\\LaravelPushNotification": "src/"
@@ -545,7 +555,7 @@
                 "notification",
                 "push"
             ],
-            "time": "2017-01-31T10:24:01+00:00"
+            "time": "2018-09-21T00:02:18+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -6454,35 +6464,35 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "4.3.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "4474f1cb4cf9873996fc07fac6533ab9298eb6fd"
+                "reference": "eeb9503bdd0bca26d7d7dcfb87742a9675d3bbcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/4474f1cb4cf9873996fc07fac6533ab9298eb6fd",
-                "reference": "4474f1cb4cf9873996fc07fac6533ab9298eb6fd",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/eeb9503bdd0bca26d7d7dcfb87742a9675d3bbcd",
+                "reference": "eeb9503bdd0bca26d7d7dcfb87742a9675d3bbcd",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.5",
                 "ext-tokenizer": "*",
-                "php": "^7.0,<7.3",
+                "php": "^7.1, <7.3",
                 "phpspec/php-diff": "^1.0.0",
-                "phpspec/prophecy": "^1.5",
+                "phpspec/prophecy": "^1.7",
                 "sebastian/exporter": "^1.0 || ^2.0 || ^3.0",
-                "symfony/console": "^3.2 || ^4.0",
-                "symfony/event-dispatcher": "^3.2 || ^4.0",
-                "symfony/finder": "^3.2 || ^4.0",
-                "symfony/process": "^3.2 || ^4.0",
-                "symfony/yaml": "^3.2 || ^4.0"
+                "symfony/console": "^3.4 || ^4.0",
+                "symfony/event-dispatcher": "^3.4 || ^4.0",
+                "symfony/finder": "^3.4 || ^4.0",
+                "symfony/process": "^3.4 || ^4.0",
+                "symfony/yaml": "^3.4 || ^4.0"
             },
             "require-dev": {
                 "behat/behat": "^3.3",
-                "phpunit/phpunit": "^5.7|^6.0",
-                "symfony/filesystem": "^3.2 || ^4.0"
+                "phpunit/phpunit": "^5.7 || ^6.0",
+                "symfony/filesystem": "^3.4 || ^4.0"
             },
             "suggest": {
                 "phpspec/nyan-formatters": "Adds Nyan formatters"
@@ -6493,7 +6503,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.3.x-dev"
+                    "dev-master": "5.0.x-dev"
                 }
             },
             "autoload": {
@@ -6531,7 +6541,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2018-07-02T17:43:33+00:00"
+            "time": "2018-09-24T07:40:08+00:00"
         },
         {
             "name": "phpspec/prophecy",
