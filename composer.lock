@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c83afecf8a566439811bd8da82f233c",
+    "content-hash": "45ecb7933df96bc4b1e85344747ada10",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -511,12 +511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davibennun/laravel-push-notification.git",
-                "reference": "6970bbe4f1e1744677208f895bc08032f4baf3be"
+                "reference": "7b129a18ecec7368a0de27ac0039d414aa596936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davibennun/laravel-push-notification/zipball/6970bbe4f1e1744677208f895bc08032f4baf3be",
-                "reference": "6970bbe4f1e1744677208f895bc08032f4baf3be",
+                "url": "https://api.github.com/repos/davibennun/laravel-push-notification/zipball/7b129a18ecec7368a0de27ac0039d414aa596936",
+                "reference": "7b129a18ecec7368a0de27ac0039d414aa596936",
                 "shasum": ""
             },
             "require": {
@@ -525,6 +525,16 @@
                 "sly/notification-pusher": "2.*"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Davibennun\\LaravelPushNotification\\LaravelPushNotificationServiceProvider"
+                    ],
+                    "aliases": {
+                        "PushNotification": "Davibennun\\LaravelPushNotification\\Facades\\PushNotification"
+                    }
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Davibennun\\LaravelPushNotification": "src/"
@@ -545,7 +555,7 @@
                 "notification",
                 "push"
             ],
-            "time": "2017-01-31T10:24:01+00:00"
+            "time": "2018-09-21T00:02:18+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1834,16 +1844,16 @@
         },
         {
             "name": "laravel/socialite",
-            "version": "v3.0.11",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "4d29ba66fdb38ec994b778e5e51657555cc10511"
+                "reference": "65f771ff4f266ebae23de1a3f18efd80a1da2f8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/4d29ba66fdb38ec994b778e5e51657555cc10511",
-                "reference": "4d29ba66fdb38ec994b778e5e51657555cc10511",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/65f771ff4f266ebae23de1a3f18efd80a1da2f8d",
+                "reference": "65f771ff4f266ebae23de1a3f18efd80a1da2f8d",
                 "shasum": ""
             },
             "require": {
@@ -1852,7 +1862,7 @@
                 "illuminate/http": "~5.4",
                 "illuminate/support": "~5.4",
                 "league/oauth1-client": "~1.0",
-                "php": ">=5.4.0"
+                "php": ">=5.6.4"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
@@ -1888,11 +1898,12 @@
                 }
             ],
             "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
+            "homepage": "https://laravel.com",
             "keywords": [
                 "laravel",
                 "oauth"
             ],
-            "time": "2018-05-12T17:44:53+00:00"
+            "time": "2018-08-16T12:51:21+00:00"
         },
         {
             "name": "laravelcollective/html",
