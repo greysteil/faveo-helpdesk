@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c83afecf8a566439811bd8da82f233c",
+    "content-hash": "7efe15cdc98e36e6117de3d858a58fb7",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -511,12 +511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davibennun/laravel-push-notification.git",
-                "reference": "6970bbe4f1e1744677208f895bc08032f4baf3be"
+                "reference": "7b129a18ecec7368a0de27ac0039d414aa596936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davibennun/laravel-push-notification/zipball/6970bbe4f1e1744677208f895bc08032f4baf3be",
-                "reference": "6970bbe4f1e1744677208f895bc08032f4baf3be",
+                "url": "https://api.github.com/repos/davibennun/laravel-push-notification/zipball/7b129a18ecec7368a0de27ac0039d414aa596936",
+                "reference": "7b129a18ecec7368a0de27ac0039d414aa596936",
                 "shasum": ""
             },
             "require": {
@@ -525,6 +525,16 @@
                 "sly/notification-pusher": "2.*"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Davibennun\\LaravelPushNotification\\LaravelPushNotificationServiceProvider"
+                    ],
+                    "aliases": {
+                        "PushNotification": "Davibennun\\LaravelPushNotification\\Facades\\PushNotification"
+                    }
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Davibennun\\LaravelPushNotification": "src/"
@@ -545,7 +555,7 @@
                 "notification",
                 "push"
             ],
-            "time": "2017-01-31T10:24:01+00:00"
+            "time": "2018-09-21T00:02:18+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -5075,16 +5085,16 @@
         },
         {
             "name": "vsmoraes/laravel-pdf",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vsmoraes/pdf-laravel5.git",
-                "reference": "89fa632ee3b973870e92b8329615a806c15b942c"
+                "reference": "a9352d34b5a21ec458a2570d81061b39ba0d0a3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vsmoraes/pdf-laravel5/zipball/89fa632ee3b973870e92b8329615a806c15b942c",
-                "reference": "89fa632ee3b973870e92b8329615a806c15b942c",
+                "url": "https://api.github.com/repos/vsmoraes/pdf-laravel5/zipball/a9352d34b5a21ec458a2570d81061b39ba0d0a3a",
+                "reference": "a9352d34b5a21ec458a2570d81061b39ba0d0a3a",
                 "shasum": ""
             },
             "require": {
@@ -5112,11 +5122,14 @@
             ],
             "description": "DOMPDF module for Laravel 5",
             "keywords": [
+                "css",
                 "dompdf",
+                "html",
+                "html2pdf",
                 "laravel",
                 "pdf"
             ],
-            "time": "2015-03-20T13:30:34+00:00"
+            "time": "2016-01-12T13:38:27+00:00"
         },
         {
             "name": "yajra/laravel-datatables-oracle",
