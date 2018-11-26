@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "1c83afecf8a566439811bd8da82f233c",
@@ -511,12 +511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davibennun/laravel-push-notification.git",
-                "reference": "6970bbe4f1e1744677208f895bc08032f4baf3be"
+                "reference": "7b129a18ecec7368a0de27ac0039d414aa596936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davibennun/laravel-push-notification/zipball/6970bbe4f1e1744677208f895bc08032f4baf3be",
-                "reference": "6970bbe4f1e1744677208f895bc08032f4baf3be",
+                "url": "https://api.github.com/repos/davibennun/laravel-push-notification/zipball/7b129a18ecec7368a0de27ac0039d414aa596936",
+                "reference": "7b129a18ecec7368a0de27ac0039d414aa596936",
                 "shasum": ""
             },
             "require": {
@@ -525,6 +525,16 @@
                 "sly/notification-pusher": "2.*"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Davibennun\\LaravelPushNotification\\LaravelPushNotificationServiceProvider"
+                    ],
+                    "aliases": {
+                        "PushNotification": "Davibennun\\LaravelPushNotification\\Facades\\PushNotification"
+                    }
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Davibennun\\LaravelPushNotification": "src/"
@@ -545,7 +555,7 @@
                 "notification",
                 "push"
             ],
-            "time": "2017-01-31T10:24:01+00:00"
+            "time": "2018-09-21T00:02:18+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -2615,12 +2625,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neitanod/forceutf8.git",
-                "reference": "e1f383c7b5331b575c41c6e936e321095017cd35"
+                "reference": "30980a8ca2787a7730d370eac310b8987eb68229"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neitanod/forceutf8/zipball/e1f383c7b5331b575c41c6e936e321095017cd35",
-                "reference": "e1f383c7b5331b575c41c6e936e321095017cd35",
+                "url": "https://api.github.com/repos/neitanod/forceutf8/zipball/30980a8ca2787a7730d370eac310b8987eb68229",
+                "reference": "30980a8ca2787a7730d370eac310b8987eb68229",
                 "shasum": ""
             },
             "require": {
@@ -2633,6 +2643,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
             "authors": [
                 {
                     "name": "Sebastián Grignoli",
@@ -2641,7 +2654,7 @@
             ],
             "description": "PHP Class Encoding featuring popular Encoding::toUTF8() function --formerly known as forceUTF8()-- that fixes mixed encoded strings.",
             "homepage": "https://github.com/neitanod/forceutf8",
-            "time": "2017-09-21T21:00:15+00:00"
+            "time": "2018-10-10T23:03:52+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2874,22 +2887,26 @@
         },
         {
             "name": "phpoffice/phpexcel",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPExcel.git",
-                "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32"
+                "reference": "1441011fb7ecdd8cc689878f54f8b58a6805f870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
-                "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/1441011fb7ecdd8cc689878f54f8b58a6805f870",
+                "reference": "1441011fb7ecdd8cc689878f54f8b58a6805f870",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "php": ">=5.2.0"
+                "php": "^5.2|^7.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*"
             },
             "type": "library",
             "autoload": {
@@ -2899,7 +2916,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "LGPL-2.1"
             ],
             "authors": [
                 {
@@ -2907,18 +2924,19 @@
                     "homepage": "http://blog.maartenballiauw.be"
                 },
                 {
-                    "name": "Mark Baker"
+                    "name": "Erik Tilt"
                 },
                 {
                     "name": "Franck Lefevre",
-                    "homepage": "http://blog.rootslabs.net"
+                    "homepage": "http://rootslabs.net"
                 },
                 {
-                    "name": "Erik Tilt"
+                    "name": "Mark Baker",
+                    "homepage": "http://markbakeruk.net"
                 }
             ],
             "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
-            "homepage": "http://phpexcel.codeplex.com",
+            "homepage": "https://github.com/PHPOffice/PHPExcel",
             "keywords": [
                 "OpenXML",
                 "excel",
@@ -2928,7 +2946,7 @@
                 "xlsx"
             ],
             "abandoned": "phpoffice/phpspreadsheet",
-            "time": "2015-05-01T07:00:55+00:00"
+            "time": "2018-11-22T23:07:24+00:00"
         },
         {
             "name": "predis/predis",
@@ -4826,12 +4844,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tymondesigns/jwt-auth.git",
-                "reference": "e190b6a75372e7e5e3a6d2cf0e4456313412299f"
+                "reference": "689fcc263f6c4f650057905ae6dce441879df19b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/e190b6a75372e7e5e3a6d2cf0e4456313412299f",
-                "reference": "e190b6a75372e7e5e3a6d2cf0e4456313412299f",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/689fcc263f6c4f650057905ae6dce441879df19b",
+                "reference": "689fcc263f6c4f650057905ae6dce441879df19b",
                 "shasum": ""
             },
             "require": {
@@ -4893,7 +4911,7 @@
                 "jwt",
                 "laravel"
             ],
-            "time": "2018-09-04T19:48:02+00:00"
+            "time": "2018-10-17T13:25:54+00:00"
         },
         {
             "name": "unisharp/laravel-ckeditor",
